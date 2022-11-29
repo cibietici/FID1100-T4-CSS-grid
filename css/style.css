@@ -1,7 +1,60 @@
-.box {
-    width: 200px;
-    height: 200px;
-    background-color: aqua;
-    padding: 10px;
-    border: 5px solid #000;
+.grid-container {
+    width: 100%;
+    min-height: 400px;
+    background-color: chocolate;
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));*/
+    /*grid-template-columns: repeat(3, 1fr);*/
+    grid-template-areas: 
+        'b1 b1 b2'
+        'b3 b4 b5'
+        'b6 . b5'
+    ;
+    gap: 10px;
+}
+
+/* @media screen and (min-width: 560px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+} */
+
+.box-area-1 {
+    grid-area: b1;
+}
+.box-area-2 {
+    grid-area: b2;
+}
+.box-area-3 {
+    grid-area: b3;
+}
+.box-area-4 {
+    grid-area: b4;
+}
+.box-area-5 {
+    grid-area: b5;
+}
+.box-area-6 {
+    grid-area: b6;
+}
+
+.grid-item {
+    background-color: blanchedalmond;
+    font-size: 50px;
+}
+
+.span-columns-2 {
+    grid-column: span 2;
+}
+
+.span-rows-2 {
+    grid-row: span 2;
+}
+
+.order-1 {
+    order: 1;
+}
+
+.order-2 {
+    order: 2;
 }
