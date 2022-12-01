@@ -1,3 +1,7 @@
+html, body {
+    scroll-behavior: smooth;
+}
+
 .grid-container {
     width: 100%;
     min-height: 400px;
@@ -57,4 +61,28 @@
 
 .order-2 {
     order: 2;
+}
+
+.space {
+    width: 100vw;
+    height: 100vh;
+    background-color: coral;
+}
+
+.bounce {
+    animation-name: bounceIt;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounceIt {
+    from {
+        transform: translateX(0px);
+    }
+    60% {
+        transform: translateX(50px)
+    }
+    to {
+        transform: translateX(0px);
+    }
 }
