@@ -86,3 +86,19 @@ html, body {
         transform: translateX(0px);
     }
 }
+
+input, button {
+    font-size: 28px;
+    padding: 10px;
+    background-color: #ddd;
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type="radio"] {
+    display: inline;
+}
+
+fieldset {
+    margin: 20px;
+}

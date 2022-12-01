@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8">
+        <title>Forms eksempel</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <h1>Skjema</h1>
+        <form action="result.html">
+            <fieldset>
+                <legend>Personalia</legend>
+                <label for="firstName">Fornavn</label>
+                <input 
+                    type="text" 
+                    name="firstName" 
+                    id="firstName"
+                    placeholder="Kari">
+                <label for="familyName">Etternavn</label>
+                <input 
+                    type="text" 
+                    name="familyName" 
+                    id="familyName"
+                    placeholder="Normenn">
+                <input 
+                    type="checkbox" 
+                    name="norsk"> Normenn?
+            </fieldset>
+            
+
+            <fieldset>
+                <legend>Kjønn</legend>
+                <input type="radio" name="gender" value="female" id="female"> <label for="female">hunkjønn</label>
+                <input type="radio" name="gender" value="male"> hankjønn
+                <input type="radio" name="gender" value="none"> ikke angitt  
+            </fieldset>
+            
+            <fieldset>
+                <legend>Kontaktopplysninger</legend>
+                <label for="email">Epost</label>
+                <input 
+                type="email" 
+                name="epost" 
+                id="email"
+                autocomplete="off" 
+                placeholder="epost" 
+                required>
+                <label for="mobile">Epost</label>
+                <input type="tel" id="mobile" name="mobile">
+            </fieldset>
+            <label for="birthdate">Fødselsdato</label>
+            <input type="datetime-local" id="birthdate" name="birthdate">
+            <input type="color" name="color" value="#000">
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
