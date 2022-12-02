@@ -2,6 +2,21 @@ html, body {
     scroll-behavior: smooth;
 }
 
+.skip-to {
+    padding: 20px 20px;
+    background-color: brown;
+    color: #fff;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transform: translateY(-100px);
+}
+
+.skip-to:focus {
+    transform: translateY(0px);
+    border: 1px solid transparent;
+}
+
 .grid-container {
     width: 100%;
     min-height: 400px;
